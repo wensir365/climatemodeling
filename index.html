@@ -1,55 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Climate Modeling : Benefit Your Learning of Climate Modeling" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Climate Modeling by wensir365</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Climate Modeling</title>
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/wensir365/climatemodeling">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/wensir365/climatemodeling/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/wensir365/climatemodeling/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/wensir365/climatemodeling">View on GitHub</a>
+    <div class="wrapper">
 
-          <h1 id="project_title">Climate Modeling</h1>
-          <h2 id="project_tagline">Benefit Your Learning of Climate Modeling</h2>
+      <section>
+        <div id="title">
+          <h1>Climate Modeling</h1>
+          <p>Benefit Your Learning of Climate Modeling</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/wensir365">wensir365</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/wensir365/climatemodeling/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/wensir365/climatemodeling/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
         <h3>欢迎来到《气候模拟》演示程序托管系统</h3>
 
 <p>《气候模拟》（北京大学，大气与海洋科学系）课程涉及到的演示程序和作业相关程序，整理在此github.com网站，以便选课同学方便地获取相关程序demo作为参考。我们会把不断修改这些程序，以确保bug最少的demo不断更新至此。相信这样会有利于选课同学的学习和课程质量的提高。</p>
 
 <h3>目录</h3>
 
-<h3>获取代码</h3>
+<ol>
+<li>Fortran 90/95/2003 training class</li>
+<li>Thermal conduction/diffusion</li>
+<li>ODE numerical methods (integration over time)</li>
+<li>0-dimensional Energy Balance Model</li>
+<li>1-dimensional Energy Balance Model</li>
+<li>Radiative Convective Model by James Kasting, PennState</li>
+<li>1-dimensional Advection Equation</li>
+<li>2-dimensional Advection Equation with Rotating Experiment</li>
+<li>3-dimensional Advection Diffusion Equation</li>
+<li>1-dimensional Burger's Equation</li>
+<li>Shallow Water Equations</li>
+<li>Barotropic Vorticity Equation</li>
+</ol><h3>获取代码</h3>
 
-<p>任何时候，您都可以通过如下方式，获取本项目的最新版代码：</p>
+<p>我们的代码遵守GNU/GPL协议，希望所有下载、使用这些demo的用户，仍继续遵守GPL协议。
+任何时候，您都可以通过如下方式，获取本项目的最新代码：</p>
 
-<p>在Unix/Linux系统中，使用Git工具获取完整文件树，在命令行中输入：</p>
+<h5>Unix/Linux</h5>
+
+<p>使用Git工具获取完整文件树，在命令行中输入：</p>
 
 <pre><code>$ git clone https://github.com/wensir365/climatemodeling.git
 </code></pre>
 
-<p>在Windows系统中，使用任意浏览器，从如下页面的右上角获取Zip或Tar包：
-<a href="https://github.com/wensir365/climatemodeling">https://github.com/wensir365/climatemodeling</a></p>
+<h5>Windows</h5>
 
-<p>我们的代码遵守GNU/GPL协议，希望所有下载、使用这些demo的用户，仍继续遵守GPL协议。</p>
+<p>使用任意浏览器，从如下页面（就是本页面）的右上角，点击获取Zip或Tar包：
+<a href="https://github.com/wensir365/climatemodeling">https://github.com/wensir365/climatemodeling</a></p>
 
 <h3>支持</h3>
 
@@ -60,17 +83,9 @@
 </li>
 </ul>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Climate Modeling maintained by <a href="https://github.com/wensir365">wensir365</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
