@@ -7,6 +7,12 @@ This project, hosted by GitHub, is aimed to provide some demo code to those stud
 
 We would like to thank all the students of our department.
 
+You may always get a free copy of this project by:
+git clone https://github.com/wensir365/climatemodeling.git
+
+or download it in a browser from:
+https://github.com/wensir365/climatemodeling
+
 
 [ Directory ]
 
@@ -45,6 +51,7 @@ Clone and Commit
 - git commit -m 'first try'							// "commit" in local repo with a message
 - git remote add origin https://github.com/wensir365/climatemodeling.git	// set remote "add" point
 - git push origin master							// push your commit
+
 
 Xinyu Wen
 Aug-3-2012
