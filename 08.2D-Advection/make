@@ -1,0 +1,9 @@
+gfortran -c *.f95
+gfortran -o run *.o
+rm -f *.mod *.o
+
+./run
+
+rm -rf result
+mkdir result
+mv result.????.txt result

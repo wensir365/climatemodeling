@@ -1,0 +1,61 @@
+===   Instructions to use the 1D climate model 
+         LOW CO2 VERSION
+===   Developed by Dr. James Kasting, collegues and students.
+
+The code is in fortran 77 with some fortran 90 features.
+
+It is set to run in a linux system. Check the firsts lines of the make file to 
+use the option that works better for your stystem. 
+
+This version of the climate model is for high CO2 atmosphere and with some work it can be coupled to the photochemical.
+
+The directory CLIMA which contains:
+
++ Clima.f
+The main program of the climate model. A long comment at the start of the
+program explains its capabilities and related publications.
+
++ makefile 
+Executable file to compile and generate the fortran executable file that runs 
+the climate model. It automatically detects when the programs have been 
+compiled. 
+ 
++ IO/
+Subdirectory with the input and output files
+
++ DATA/
+Subdirectory with the data files that the program needs to run.
+
++ Subroutine subdirectories:
+(Descriptions of the subroutines in the readme files within each 
+subdirectory)
+SETUP
+CONVEC
+RADTRANS
+RRTM
+COUPLE
+PRTCL
+
++ CLIMA.o and RRTM.o
+These subdirectories storage the *.o files that result from the compilation
+of the code. 
+
+***** To COMPILE and RUN the climate model
+
+1. Choose the composition of the atmosphere in IO/mixing_ratios.dat
+2. Choose the parameters to run the program in IO/input_clima.dat
+3. Compile the climate typing:
+	make -f makefile
+4. Run the model typing:
+	./runclima
+
+To start from the last solution copy IO/TempOut.dat to IO/TempIn.dat
+
+
+Antigona Segura
+antigona@essc.psu.edu
+March, 2005
+
+NOTES added later
+
+Summer 2008

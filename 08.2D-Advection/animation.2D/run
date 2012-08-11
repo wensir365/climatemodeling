@@ -1,0 +1,15 @@
+#!/bin/csh
+
+foreach f (../result/*.txt)
+	setenv FN $f
+	set fno = $f:t
+	setenv FO $fno:r
+	ncl draw.ncl
+	convert -trim -density 150 $FO.eps $FO.jpg
+	rm -f $FO.eps
+	echo "processing ... $FO"
+end
+
+rm -rf pic
+mkdir pic
+mv -f *.jpg pic

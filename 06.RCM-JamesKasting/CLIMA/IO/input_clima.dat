@@ -1,0 +1,77 @@
+* This file contains the variable parameters needed by the 1D climate model
+* Created March 2005. 
+* Write the value AFTER the 11th space
+*2345678901HERE
+
+STARR=     "Sun"
+NSTEPS=    200
+dt0=       1.e4
+dtmax=     1.e5
+TSTOP=     1.e7                 !Used when ICONSERV =1
+IMW=       1          
+RSURF=     0.8                
+ZY=        60.     
+DTAU0=     0.5
+ZCON=      20
+P0=        6.6e-5               !Pressure at the top
+PG0=       1.                  	!Surface pressure (bar)
+G=	   980.			!Gravity (Mars=373., Earth=980.) 
+FAC=       1.5 
+IO3=       1   			!Ozone?
+IUP=       1                   
+TG0=       288.			!Surface temperature for IUP=1   
+TSTRAT=    200.             	!Stratospheric temperature for IUP=1
+ICONSERV=  0                    !energy conservation mode
+SRFALB=    0.2 	         	!fixed planetary albedo (0.2) 
+SOLCON=    1.0 			!SOLCON=S/So
+CO2MAX=    3.55e-2 
+Idry=      0                   !Dry adiabat (1) or moist adiabat(2)
+                  
+*******************************************************
+**   VARIABLE INPUT PARAMETERS
+*******************************************************
+C      STARR - The options are: Sun, F2V,K2V,dMV
+C      NSTEPS - NUMBER OF ITERATIONS
+C         IMW - 0 FOR SATURATED TROPOSPHERE, 1 FOR MANABE/WETHERALD
+C               RELATIVE HUMIDITY, 2 FOR M/W WITH CONSTANT
+C               STRATOSPHERIC H2O CONTENT
+C        RSURF - SURFACE RELATIVE HUMIDITY
+C           ZY - SOLAR ZENITH ANGLE (DEGREES)
+C        DTAU0 - OPTICAL DEPTH STEP IN SUBLEVEL INTEGRATION
+C         ZCON - ARBITRARY CONSTANT ADDED TO Z TO KEEP IT POSITIVE
+C           P0 - PRESSURE AT TOP OF GRID
+c
+C          PG0 - DRY PRESSURE AT BOTTOM OF GRID. 
+c            G - Gravity aceleration (cm/s^2)
+C          FAC - RATIO OF GRID SPACING AT TOP TO SPACING AT
+C                BOTTOM
+C          IO3 - 1 TO INCLUDE O3, 0 TO LEAVE IT OUT
+C          IUP - SPECIFIES TYPE OF INITIALIZATION (0 IF YOU WISH TO
+C                START FROM AN EXISTING SOLUTION, 1 IF YOU WISH TO
+C                SPECIFY A NEW SURFACE TEMPERATURE)
+C               IF OPTION 1 IS SELECTED YOU MUST MAKE SURE THAT
+C               THE STARTING TEMPERATURES ABOVE GROUND LEVEL ARE LESS
+C               THAN TG0, SINCE THE TROPOSPHERIC LAPSE RATE IS INTEGRA-
+C               TED UPWARDS IN THIS CASE.       
+C         TG0 - INITIAL SURFACE TEMPERATURE (FOR IUP = 1 CASE)
+C      TSTRAT - Stratospheric temperature for IUP=1. Suggestion for 
+c               present Earth 220.        
+C       STARR - Character variable to choose a star, it can be:
+c               Sun, F2V, K2V, G2V 
+c               NOTES: G2V is NOT the Sun. 
+c               Write it exactly as it is listed.
+c               DO NOT FORGET quotation marks.
+c    ICONSERV - 0 = Non strict time-stepping method (faster)
+c               1 = Each time step conservs energy (better for high CO2)  
+c     ICOUPLE - 1 = Coupled to the photochemical model              
+c               0 = Not coupled
+c      SRFALB - Planetary albedo (0.2 for Present Earth)
+c      SOLCON - Solar constant (S/So)
+c       dtmax - Maximum time step in seconds    
+c      CO2MAX - Maximum CO2 mixing ratio that RRTM can manage with accuracy, 
+c               for greater values of CO2 the former IR subroutine is used.
+c        Idry - To be used in the CONVEC subroutine
+c               1 = Dry adiabat (for high CO2 atmospheres)
+c               0 = Moist adiabat
+
+

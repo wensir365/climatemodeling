@@ -1,0 +1,220 @@
+1         H2O       O1D       OH        OH
+2         H2        O1D       OH        H
+3         H2        O         OH        H
+4         H2        OH        H2O       H
+5         H         O3        OH        O2
+6         H         O2        HO2
+7         H         HO2       H2        O2
+8         H         HO2       H2O       O
+9         H         HO2       OH        OH
+10        OH        O         H         O2
+11        OH        HO2       H2O       O2
+12        OH        O3        HO2       O2
+13        HO2       O         OH        O2
+14        HO2       O3        OH        O2        O2
+15        HO2       HO2       H2O2      O2
+16        H2O2      OH        HO2       H2O
+17        O         O         O2
+18        O         O2        O3
+19        O         O3        O2        O2
+20        OH        OH        H2O       O
+21        O1D       N2        O         N2
+22        O1D       O2        O         O2
+23        O2        HV        O         O1D
+24        O2        HV        O         O
+25        H2O       HV        H         OH
+26        O3        HV        O2        O1D
+27        O3        HV        O2        O
+28        H2O2      HV        OH        OH
+29        CO2       HV        CO        O
+30        CO        OH        CO2       H
+31        CO        O         CO2
+32        H         CO        HCO
+33        H         HCO       H2        CO
+34        HCO       HCO       H2CO      CO
+35        OH        HCO       H2O       CO
+36        O         HCO       H         CO2
+37        O         HCO       OH        CO
+38        H2CO      HV        H2        CO
+39        H2CO      HV        HCO       H
+40        HCO       HV        H         CO
+41        H2CO      H         H2        HCO
+42        CO2       HV        CO        O1D
+43        H         H         H2
+44        HCO       O2        HO2       CO
+45        H2CO      OH        H2O       HCO
+46        H         OH        H2O
+47        OH        OH        H2O2
+48        H2CO      O         HCO       OH
+49        H2O2      O         OH        HO2
+50        HO2       HV        OH        O
+51        CH4       HV        CH21      H2
+52        CH3OOH    HV        H3CO      OH
+53        N2O       HV        N2        O
+54        HNO2      HV        NO        OH
+55        HNO3      HV        NO2       OH
+56        NO        HV        N         O
+57        NO2       HV        NO        O
+58        CH4       OH        CH3       H2O
+59        CH4       O1D       CH3       OH
+60        CH4       O1D       H2CO      H2
+61        CH21      CH4       CH3       CH3
+62        CH21      O2        H2CO      O
+63        CH21      N2        CH23      N2
+64        CH23      H2        CH3       H
+65        CH23      CH4       CH3       CH3
+66        CH23      O2        H2CO      O
+67        CH3       O2        CH3O2
+68        CH3       OH        H2CO      H2
+69        CH3       O         H2CO      H
+70        CH3       O3        H2CO      HO2
+71        CH3O2     HO2       CH3OOH    O2
+72        CH3O2     CH3O2     H3CO      H3CO      O2
+73        CH3O2     NO        H3CO      NO2
+74        H3CO      O2        H2CO      HO2
+75        H3CO      O         H2CO      OH
+76        H3CO      OH        H2CO      H2O
+77        N2O       O1D       NO        NO
+78        N2O       O1D       N2        O2
+79        N         O2        NO        O
+80        N         O3        NO        O2
+81        N         OH        NO        H
+82        N         NO        N2        O
+83        NO        O3        NO2       O2
+84        NO        O         NO2
+85        NO        HO2       NO2       OH
+86        NO        OH        HNO2
+87        NO2       O         NO        O2
+88        NO2       OH        HNO3
+89        NO2       H         NO        OH
+90        HNO3      OH        H2O       NO3
+91        HO2       NO2       HO2NO2
+92        HO2NO2    OH        NO2       H2O       O2
+93        HO2NO2    O         NO2       OH        O2
+94        HO2NO2    HV        HO2       NO2                 (HV = M)
+95        HO2NO2    HV        HO2       NO2
+96        CH3OOH    OH        CH3O2     H2O
+97        CH3O2     OH        H3CO      HO2
+98        O3        NO2       O2        NO3
+99        NO2       NO3       NO        NO2       O2
+100       O         NO3       O2        NO2
+101       CH3CL     HV        CH3       CL
+102       NO        NO3       NO2       NO2
+103       OH        NO3       HO2       NO2
+104       CH3CL     OH        CL        H2O
+105       CL        O3        CLO       O2
+106       CL        H2        HCL       H
+107       CL        CH4       HCL       CH3
+108       CL        CH3CL     CL        HCL
+109       CL        H2CO      HCL       HCO
+110       CL        H2O2      HCL       HO2
+111       CL        HO2       HCL       O2
+112       CL        HO2       CLO       OH
+113       CL        CLONO2    CL        CL        NO2
+114       CL        NO        NOCL
+115       CL        NO2       CLONO
+116       CL        NOCL      NO        CL2
+117       CL        O2        CLO2
+118       CL        CLO2      CL2       O2
+119       CL        CLO2      CLO       CLO
+120       CLO       O         CL        O2
+121       CLO       NO        CL        NO2
+122       CLO       NO2       CLONO2
+123       CLO       HO2       HOCL      O2
+124       CLO       OH        CL        HO2
+125       HCL       OH        CL        H2O
+126       HOCL      OH        CLO       H2O
+127       CLONO2    OH        CL        HO2       NO2
+128       HCL       O         CL        OH
+129       HOCL      O         CLO       OH
+130       CLONO2    O         CL        O2        NO2
+131       CL2       OH        HOCL      CL
+132       CL2       HV        CL        CL
+133       CLO2      HV        CLO       O
+134       HCL       HV        H         CL
+135       HOCL      HV        OH        CL
+136       NOCL      HV        CL        NO
+137       CLONO     HV        CL        NO2
+138       CLONO2    HV        CL        NO3
+139       CLO2      HV        CL        O2                  (HV = M)
+140       HO2       NO3       HNO3      O2       
+141       CLO       CLO       CL2O2
+142       CL2O2     HV        CLO2      CL
+143       CL2O2     HV        CLO       CLO                 (HV = M)
+144       CLO2      HV        CL        O2                  (HV = M)
+145       CL        NO3       CLO       NO2
+146       CL        HOCL      CL2       OH
+147       CLO       NO3       CLONO     O2
+148       CLONO     OH        HOCL      NO2
+149       CLO2      O         CLO       O2
+150       NO2       O         NO3
+151       NO3       HV        NO2       O
+152       NO3       NO2       N2O5
+153       N2O5      HV        NO2       NO3
+154       N2O5      HV        NO2       NO3                 (HV = M)
+155       N2O5      H2O       HNO3      HNO3
+156       SO        HV        S         O
+157       SO2       HV        SO        O
+158       H2S       HV        HS        H
+159       SO        O2        O         SO2
+160       SO        HO2       SO2       OH
+161       SO        O         SO2
+162       SO        OH        SO2       H
+163       SO2       OH        HSO3
+164       SO2       O         SO3
+165       SO3       H2O       H2SO4
+166       HSO3      O2        HO2       SO3
+167       HSO3      OH        H2O       SO3
+168       HSO3      H         H2        SO3
+169       HSO3      O         OH        SO3
+170       H2S       OH        H2O       HS
+171       H2S       H         H2        HS
+172       H2S       O         OH        HS
+173       HS        O         H         SO
+174       HS        O2        OH        SO
+175       HS        HO2       H2S       O2
+176       HS        HS        H2S       S
+177       HS        HCO       H2S       CO
+178       HS        H         H2        S
+179       HS        S         H         S2
+180       S         O2        SO        O
+181       S         OH        SO        H
+182       SO2       HV        S         O2
+183       S         HO2       HS        O2
+184       S         HO2       SO        OH
+185       HS        H2CO      H2S       HCO
+186       SO2       HV        SO21
+187       SO2       HV        SO23
+188       H2SO4     HV        SO2       OH        OH
+189       SO3       HV        SO2       O
+190       SO21      M         SO23      M
+191       SO21      M         SO2       M
+192       SO21      HV        SO23      HV
+193       SO21      HV        SO2       HV
+194       SO21      O2        SO3       O
+195       SO21      SO2       SO3       SO
+196       SO23      M         SO2       M
+197       SO23      HV        SO2       HV
+198       SO23      SO2       SO3       SO
+199       SO        NO2       SO2       NO
+200       SO        O3        SO2       O2
+201       SO2       HO2       SO3       OH
+202       HS        O3        HSO       O2
+203       HS        NO2       HSO       NO
+204       S         O3        SO        O2
+205       SO        SO        SO2       S
+206       SO3       SO        SO2       SO2
+207       S         CO2       SO        CO
+208       SO        HO2       HSO       O2
+209       SO        HCO       HSO       CO
+210       H         SO        HSO
+211       HSO       HV        HS        O
+212       HSO       OH        H2O       SO
+213       HSO       H         HS        OH
+214       HSO       H         H2        SO
+215       HSO       HS        H2S       SO
+216       HSO       O         OH        SO
+217       HSO       S         HS        SO
+218       N2        O1D       N2O
+219       N2O       H         NO        NO        H
+220       N2O       NO        NO2       N2

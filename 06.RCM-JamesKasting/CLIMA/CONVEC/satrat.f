@@ -1,0 +1,26 @@
+      SUBROUTINE SATRAT(T,PSAT)
+C
+C   THIS SUBROUTINE FINDS THE SATURATION VAPOR PRESSURE (PSAT) AT
+C   A GIVEN TEMPERATURE T.
+C
+      INCLUDE '../INCLUDECLIM/parNT.inc'
+      INCLUDE '../INCLUDECLIM/comFBLOK.inc'
+      INCLUDE '../INCLUDECLIM/comSBLOK.inc'
+
+      RV = R/18.
+C
+      IF(T.GT.646.96) GO TO 3
+      IF(T.GT.273.16) GO TO 2
+      HL = SUBL
+      PSAT = P0P * EXP(-HL/RV * (1./T - 1./T0P))
+      RETURN
+C
+   2  TC = T - 273.15
+      N = TC/5. + 1
+      FR = (TC - TTAB(N))/(TTAB(N+1) - TTAB(N))
+      PSAT = FR*PVAP(N+1) + (1.-FR)*PVAP(N)
+      RETURN
+C
+   3  PSAT = 1.E99
+      RETURN
+      END

@@ -1,0 +1,8 @@
+c Common block used in: Clima.f, SETUP/readsol.f
+      COMMON/ABLOK1/LTYPE(NF,3),XH2O(NF),YH2O(NF),XCO2(NF),YCO2(NF),
+     2  AXH(NF),AYH(NF),BXH(NF),BYH(NF),AXC(NF),AYC(NF),BXC(NF),
+     3  BYC(NF),PDOP(NF),CPR(NF),TPR(NF),PATH(NS4),PATHP(NS4),
+     4  PATHT(NS4),P1,P2,T1,T2,TAU2,TAUP2,
+     5  ALPHA(4),BETH2O(4,5,NF),
+     6  BETCO2(4,5,NF),CA(19),CB(19),CC(19),CD(19),CE(19),CH(19),
+     7  CK(19)

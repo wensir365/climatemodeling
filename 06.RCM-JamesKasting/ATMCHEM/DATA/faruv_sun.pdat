@@ -1,0 +1,12 @@
+  L     SFX(L)    Note: SFX(1) thru SFX(9)
+ ==============   represent flux over 50 A
+   1725   1.1E10  intervals. SFX(10) is only
+   1675   6.4E9   the flux at Lyman alpha (1216A)
+   1625   3.5E9   so its value is divided by 50A.
+   1575   2.4E9   ie: flux at Lya is 5E+11 photons
+   1525   1.9E9   cm-2 s-1. (Verified by WMO
+   1475   1.1E9   Report #16, Atm Ozone, VI, 1985)
+   1425   7.7E8
+   1375   6.3E8
+   1325   9.5E8
+   1216   1.0E10

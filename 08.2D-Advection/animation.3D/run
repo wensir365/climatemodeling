@@ -1,0 +1,14 @@
+#!/bin/csh
+
+foreach f (../result/*.txt)
+	setenv FN $f
+	set fno = $f:t
+	setenv FO $fno:r
+	ncl draw.ncl
+	echo "processing ... $FO"
+	rm -f $FO.ps
+end
+
+rm -rf pic
+mkdir pic
+mv -f *.jpg pic

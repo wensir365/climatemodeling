@@ -1,0 +1,11 @@
+set xlabel "Time Step"
+set ylabel "Temp"
+
+set yrange [-50:30]
+set xrange [1:1000]
+
+set title "Earth Temperature using 1D-EBM"
+
+plot "result" u 1:2 t "90~80" w l lw 5, "result" u 1:3 t "80~70" w l lw 5, "result" u 1:4 t "70~60" w l lw 5, "result" u 1:5 t "60~50" w l lw 5, "result" u 1:6 t "50~40" w l lw 5, "result" u 1:7 t "40~30" w l lw 5, "result" u 1:8 t "30~20" w l lw 5, "result" u 1:9 t "20~10" w l lw 5, "result" u 1:10 t "10~0" w l lw 5
+
+pause -1

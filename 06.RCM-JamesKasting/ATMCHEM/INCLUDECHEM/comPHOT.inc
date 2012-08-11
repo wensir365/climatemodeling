@@ -1,0 +1,6 @@
+c Common block with PHOTOCHEMICAL model
+       common/phot/XSGFLUX(NQ),XFLOW(NQT),XO3COL,LLBOUND(NQT),
+     &   XUSOL(NQ,NZ),XTP(NSP),XTL(NSP),IISPEC(NSP2),
+     &   FCH4,FH2,FCO,FN2O,FCH3CL, XDEN(NZ),XSL(NSP,NZ),XTCH(NZ)
+     
+ 

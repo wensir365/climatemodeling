@@ -1,0 +1,62 @@
+*** Set parameters for the high O2 photochemical model ***
+* Write the number after the 11th space
+*2345678901Here
+
+STARR=     'Sun'
+FLUXFAC=   1.0
+INIT=      0
+TSTOP=     5.e17
+DT=        1.e-4
+NSTEPS=    400
+ZY=        40.
+AGL=       0.5
+ISEASON=   1     
+IZYO2=     0
+IO2=       1
+INO=       1
+EPSJ=      1.E-7
+ZTROP=     11.E5
+FCO2=      3.55e-4      !CO2 surface mixing ratio for ICOUPLE=0
+FO2=       0.21         !O2 mixing ratio for ICOUPLE=0 
+
+*****************************************
+***             DEFINITIONS           ***
+*****************************************
+c    STARR - Character variable to choose a star, it can be:
+c             Sun, F2V, K2V,dMV 
+c    FLUXFAC = Factor to multiply all the stellar spectra 
+c     (to go back in time when the sun was fainter or to "move" the planet)
+c    INIT = Choose 1 to force the program to start with constant mixing ratio 
+c    for species like CH4, H2, CH3Cl,CO and N2O (this option should be used 
+c    together with the boundary condition LBOUND = 1) 
+c    TSTOP= Final time. The run will stop when the program runs for NSTEPS 
+c     or when it arrives to TSTOP, whatever happens first.
+c    DT = Initial time step.
+c    NSTEPS=  Total steps
+C     ZY = SOLAR ZENITH ANGLE (IN DEGREES)
+C     AGL = DIURNAL AVERAGING FACTOR FOR PHOTORATES
+C     ISEASON = TELLS WHETHER P AND T VARY WITH TIME (THEY DON'T FOR
+C               ISEASON < 3)
+C     IZYO2 = TELLS WHETHER SOLAR ZENITH ANGLE VARIES WITH TIME (0 SAYS
+C             IT DOESN'T; 1 SAYS IT DOES)
+C     IO2 = 0 FOR ALLEN AND FREDERICK O2 SCHUMANN-RUNGE COEFFICIENTS
+C         = 1 FOR EXPONENTIAL SUM FITS (FOR LOW-O2 ATMOSPHERES)
+C     INO = 0 FOR ALLEN AND FREDERICK NO PREDISSOCIATION COEFFICIENTS
+C         = 1 FOR MODIFIED CIESLIK AND NICOLET FORMULATION
+C     EPSJ = AMOUNT BY WHICH TO PERTURB THINGS FOR JACOBIAN CALCULATION
+C     ZTROP = TROPOPAUSE HEIGHT (ABOVE WHICH H2O BEHAVES AS A NONCONDENS
+C             ABLE GAS)
+C     STARR - Character variable to choose a star, it can be:
+c             Sun, F2V, K2V, G2V,MdV 
+c             G2V is NOT the Sun. Write it exactly as it is listed
+c             DO NOT FORGET quotation marks
+c     ICOUPLE - 1 = Coupled to the climate model              
+c               0 = Not coupled
+C     FCO2 = CO2 mixing ratio when ICOUPLE = 0
+C     FO2 = O2 mixing ratio when ICOUPLE = 0
+C     DT = INITIAL TIME STEP
+C     TSTOP = TIME AT WHICH CALCULATION IS TO STOP
+C     NSTEPS = NUMBER OF TIME STEPS TO RUN (IF TSTOP IS NOT REACHED)
+ OF TIME STEPS TO RUN (IF TSTOP IS NOT REACHED)
+TOP IS NOT REACHED)
+ME STEPS TO RUN (IF TSTOP IS NOT REACHED)

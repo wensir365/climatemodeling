@@ -1,0 +1,8 @@
+c common block used in: Clima.f,SETUP/readsolar.f, SETUP/solar.f,
+c PRTCL/interpar1.f, RADTRANS/rayley.f
+      COMMON/SOLARBLK/AMU0,SRFALB,OMG0A(NSOL,ND-1),
+     &  ASYA(NSOL,ND-1),TAUAER(NSOL),SIGERT(NSOL),FMA(NSOL),
+     &  XLAMBDA(NSOL),FUPSOL(ND),FDNSOL(ND),
+     &  NGAS(2,NSOL),WGHT(4,2,NSOL),NPR(2,NSOL),SOLINT(NSOL),
+     &  ASY(ND-1),OMG0(ND-1),FMT(ND-1),QEXT(NSOL,ND-1),
+     &  SOLUV(NSOLUV), XLAMBUV(NSOLUV)

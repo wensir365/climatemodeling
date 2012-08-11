@@ -1,0 +1,10 @@
+How to use the NCL script?
+--------------------------
+
+Come to this directory and run below command:
+"ncl draw.ncl" [Enter]
+
+You can see a series of figures as outputs.
+
+Thanks,
+Xinyu
