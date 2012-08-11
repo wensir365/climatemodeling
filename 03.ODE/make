@@ -1,0 +1,5 @@
+gfortran -c *.f95
+gfortran -o run *.o
+rm -f *.mod *.o
+./run > result
+gnuplot draw

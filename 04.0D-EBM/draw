@@ -1,0 +1,7 @@
+#set xrange [0:3000]
+set xlabel "Ts"
+set ylabel "Ta"
+
+plot "result" using 2:3 with lines lw 5
+
+pause -1

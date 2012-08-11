@@ -1,0 +1,5 @@
+set xlabel "X"
+set ylabel "Y"
+set zlabel "Z"
+splot "result" using 2:3:4 with lines lw 1
+pause -1
