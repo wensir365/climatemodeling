@@ -1,0 +1,28 @@
+!--------------------------
+! Configurations for BVE
+! demo for CM2010
+!
+! by
+!
+! Xinyu Wen, Peking Univ.
+! xwen@pku.edu.cn
+! Nov. 2010
+!--------------------------
+
+&physics
+	g	= 9.8			! gravitational acceleration (m/s^2)
+	Re	= 6371.0008e+3		! Earth's radius (m)
+	Omega	= 7.292e-5		! angular velocity (rad/s), should be 7.292e-5
+	lat0	= 55			! central latitude of the channel domain (degrees_north)
+/
+
+&bve
+	description	= "nh.2010-11-17-00"	! a name for current experiment, also serve as the prefix of output files
+	relaxation	= "sequential"	! simultaneous or sequential
+	betaplane	= .true.	! f-plane or beta-plane?
+	criteria	= 500		! criteria for quit from reverse Helmholtz iterations
+
+	dt		= 300.0		! time step (sec)
+	stepoutinterval	= 12		! make output every "stepoutinterval" steps
+	totalstep	= 1000		! how many steps you want to integrate
+/

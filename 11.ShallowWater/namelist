@@ -1,0 +1,30 @@
+!--------------------------
+! Configurations for SWEs
+! demo for CM2010
+!
+! by
+!
+! Xinyu Wen, Peking Univ.
+! xwen@pku.edu.cn
+! Nov. 2010
+!--------------------------
+
+&physics
+	g	= 9.8			! gravitational acceleration (m/s^2)
+	Re	= 6371.0008e+3		! Earth's radius (m)
+	Omega	= 7.292e-5		! angular velocity (rad/s), should be 7.292e-5
+	Hscale	= 10000.0		! scaled height for so-called "shallow water" (m)
+	lat0	= 55			! central latitude of the channel domain (degrees_north)
+/
+
+&swe
+	description	= "nh.beta.rossby"	! a name for current experiment, also serve as the prefix of output files
+
+	term_advection	= .false.	! switch for advection term in momentum equations
+	term_coriolis	= .true.	! switch for coriolis term in momentum equations
+	term_diffusion	= .true.	! switch for diffusion term in momentum equations
+	beta_effect	= .true.	! f-plane or beta-plane in case "term_coriolis" is ".true."
+	
+	Kx	= 100.0			! coefficient of turbulance diffusion in x-direction (m^2/s)
+	Ky	= 100.0			! coefficient of turbulance diffusion in y-direction (m^2/s)
+/

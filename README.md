@@ -8,7 +8,23 @@ This project, hosted by GitHub, is aimed to provide some demo code to those stud
 We would like to thank all the students of our department.
 
 
-[ HowTo ]
+[ Directory ]
+
+01. FortranPractice		| Fortran 90/95/2003 training class
+02. ThermalConduction		| Thermal conduction/diffusion
+03. ODE				| ODE numerical methods (integration over time)
+04. 0D-EBM			| 0-dimensional Energy Balance Model
+05. 1D-EBM			| 1-dimensional Energy Balance Model
+06. RCM-JamesKasting		| Radiative Convective Model by James Kasting, PennState
+07. 1D-Advection		| 1-dimensional Advection Equation
+08. 2D-Advection		| 2-dimensional Advection Equation with Rotating Experiment
+09. 3D-AdvectionDiffusion	| 3-dimensional Advection Diffusion Equation
+10. Burger			| 1-dimensional Burger's Equation
+11. ShallowWater		| Shallow Water Equations
+12. BarotropicVorticity		| Barotropic Vorticity Equation
+
+
+[ HowTo Github ]
 
 Set Up Git on Local
 

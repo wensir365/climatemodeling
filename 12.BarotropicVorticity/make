@@ -1,0 +1,18 @@
+#!/bin/csh
+
+set f95 = pgf90
+#set f95 = gfortran -fopenmp
+
+$f95 -c data.f95
+$f95 -c -mp integrate.f95
+$f95 -c io.f95		-I/usr/local/include
+$f95 -c main.f95
+
+$f95 -mp -o bve *.o	-L/usr/local/lib -lnetcdf
+
+rm -f *.o *.mod
+#rm -rf result
+#mkdir result
+
+./bve < namelist
+

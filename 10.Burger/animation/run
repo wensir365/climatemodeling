@@ -1,0 +1,5 @@
+ncl draw.ncl
+rm -rf pic
+mkdir pic
+mv *jpg pic
+

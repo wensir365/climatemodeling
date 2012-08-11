@@ -1,0 +1,20 @@
+#!/bin/csh
+
+set f95 = gfortran
+set f95 = gfortran
+
+$f95 -c data.f95
+$f95 -c integrate.f95
+$f95 -c io.f95		-I/usr/local/netcdf.gfortran/include
+#$f95 -c io.f95		-I/usr/local/include
+$f95 -c main.f95
+
+#$f95 -o run *.o	-L/usr/local/lib -lnetcdf
+$f95 -o run *.o -L/usr/local/netcdf.gfortran/lib -lnetcdf
+
+#rm -f *.o *.mod
+#rm -rf result
+#mkdir result
+
+./run < namelist
+

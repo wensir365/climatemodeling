@@ -1,0 +1,13 @@
+#!/bin/csh
+
+foreach f (../result/*.nc)
+	setenv FIN $f
+	set fno = $f:t
+	setenv FON $fno:r
+	ncl draw.ncl
+	echo "processing ... $FON"
+end
+
+rm -rf pic
+mkdir pic
+mv -f *.jpg pic
