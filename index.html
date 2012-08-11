@@ -1,48 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
     <title>Climate Modeling by wensir365</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/wensir365/climatemodeling">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/wensir365/climatemodeling/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/wensir365/climatemodeling/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
 
-    <div class="wrapper">
+    <header>
+      <div class="container">
+        <h1>Climate Modeling</h1>
+        <h2>Benefit Your Learning of Climate Modeling</h2>
 
-      <section>
-        <div id="title">
-          <h1>Climate Modeling</h1>
-          <p>Benefit Your Learning of Climate Modeling</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/wensir365">wensir365</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </div>
+        <section id="downloads">
+          <a href="https://github.com/wensir365/climatemodeling/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/wensir365/climatemodeling/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/wensir365/climatemodeling" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
-        <h3>欢迎来到《气候模拟》演示程序托管系统</h3>
+    <div class="container">
+      <section id="main_content">
+        <h2>欢迎来到《气候模拟》程序托管系统</h2>
 
 <p>《气候模拟》（北京大学，大气与海洋科学系）课程涉及到的演示程序和作业相关程序，整理在此github.com网站，以便选课同学方便地获取相关程序demo作为参考。我们会把不断修改这些程序，以确保bug最少的demo不断更新至此。相信这样会有利于选课同学的学习和课程质量的提高。</p>
 
-<h3>目录</h3>
+<h2>目录</h2>
 
 <ol>
 <li>Fortran 90/95/2003 training class</li>
@@ -57,35 +47,43 @@
 <li>1-dimensional Burger's Equation</li>
 <li>Shallow Water Equations</li>
 <li>Barotropic Vorticity Equation</li>
-</ol><h3>获取代码</h3>
+</ol><h2>获取代码</h2>
 
 <p>我们的代码遵守GNU/GPL协议，希望所有下载、使用这些demo的用户，仍继续遵守GPL协议。
 任何时候，您都可以通过如下方式，获取本项目的最新代码：</p>
 
-<h5>Unix/Linux</h5>
+<h4>Unix/Linux</h4>
 
 <p>使用Git工具获取完整文件树，在命令行中输入：</p>
 
 <pre><code>$ git clone https://github.com/wensir365/climatemodeling.git
 </code></pre>
 
-<h5>Windows</h5>
+<h4>Windows</h4>
 
-<p>使用任意浏览器，从如下页面（就是本页面）的右上角，点击获取Zip或Tar包：
-<a href="https://github.com/wensir365/climatemodeling">https://github.com/wensir365/climatemodeling</a></p>
-
-<h3>支持</h3>
+<p>使用任意浏览器，从如下页面（就是本页面）的标题处，点击获取Zip或Tar包：</p>
 
 <ul>
-<li>闻新宇，北京大学，大气与海洋科学系，<a href="mailto:xwen@pku.edu.cn">xwen@pku.edu.cn</a>
-</li>
-<li>贾喆，北京大学，大气与海洋科学系，<a href="mailto:jiazhe0909@163.com">jiazhe0909@163.com</a>
-</li>
+<li><a href="http://wensir365.github.com/climatemodeling/">http://wensir365.github.com/climatemodeling/</a></li>
+</ul><p>或者从如下开发页面，点击查看源代码：</p>
+
+<ul>
+<li><a href="https://github.com/wensir365/climatemodeling">https://github.com/wensir365/climatemodeling</a></li>
+</ul><h2>科学文档</h2>
+
+<p>Wiki是最好的存放Documentation的地方。请浏览如下Wiki，获取与本项目有关的信息:</p>
+
+<ul>
+<li><a href="https://github.com/wensir365/climatemodeling/wiki">https://github.com/wensir365/climatemodeling/wiki</a></li>
+</ul><h2>技术支持</h2>
+
+<ul>
+<li>闻新宇（<a href="mailto:xwen@pku.edu.cn">xwen@pku.edu.cn</a>），大气与海洋科学系，北京大学</li>
+<li>贾喆（<a href="mailto:jiazhe0909@163.com">jiazhe0909@163.com</a>），大气与海洋科学系，北京大学</li>
 </ul>
       </section>
-
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
     
   </body>
 </html>
